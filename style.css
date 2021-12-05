@@ -19,9 +19,9 @@ img {
 }
 
 /*==== VARIABLES ===============*/
-:root{
+:root {
   --header-height: 4.5rem;
-   
+
   /* colors */
   --hue: 159;
   /* HSL color mode */
@@ -31,7 +31,7 @@ img {
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
-  --body-color: hsl( 0 0% 98%)
+  --body-color: hsl(0 0% 98%);
 }
 
 /*==== BASE ===============*/
@@ -49,7 +49,7 @@ body {
 .title {
   font: 700 1.875rem 'Poppins', sans-serif;
   color: var(--title-color);
-  -webkit-font-smoothing: auto; 
+  -webkit-font-smoothing: auto;
 }
 
 .button {
@@ -109,7 +109,7 @@ body {
   margin-bottom: 4rem;
 }
 
-.section header p strong  {
+.section header p strong {
   color: var(--base-color);
 }
 
@@ -160,8 +160,8 @@ main {
   margin-top: calc(var(--header-height) + 2rem);
 }
 
-/*==== LOGOs ===============*/   
-.logo{
+/*==== LOGOs ===============*/
+.logo {
   font: 700 1.31rem 'Poppins', sans-serif;
   color: var(--title-color);
 }
@@ -189,15 +189,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--base-color);  
+  color: var(--base-color);
 }
 
 nav ul li a::after {
-  content: "";
+  content: '';
   width: 0%;
   height: 2px;
   background: var(--base-color);
-  
+
   position: absolute;
   left: 0;
   bottom: -1.5rem;
@@ -207,7 +207,6 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
   width: 100%;
-
 }
 
 nav .menu {
@@ -251,9 +250,9 @@ nav.show ul.grid {
 .toggle {
   color: var(--base-color);
   font-size: 1.5rem;
-  cursor: pointer ;
+  cursor: pointer;
 }
- 
+
 nav .icon-close {
   visibility: hidden;
   opacity: 0;
@@ -277,7 +276,7 @@ nav.show .icon-close {
   overflow: hidden;
 }
 
-#home .container{
+#home .container {
   margin: 0;
 }
 
@@ -298,7 +297,7 @@ nav.show .icon-close {
 
 #home .image img {
   position: relative;
-  right: 2.93rem
+  right: 2.93rem;
 }
 
 #home .image img,
@@ -312,7 +311,7 @@ nav.show .icon-close {
   text-align: center;
 }
 
-#home .text h1 { 
+#home .text h1 {
   margin-bottom: 1rem;
 }
 
@@ -325,7 +324,7 @@ nav.show .icon-close {
   background: white;
 }
 
-#about .container{
+#about .container {
   margin: 0;
 }
 
@@ -334,7 +333,7 @@ nav.show .icon-close {
 }
 
 #about .image::before {
-  content:'';
+  content: '';
   height: 100%;
   width: 100%;
   background: var(--base-color-second);
@@ -381,4 +380,102 @@ nav.show .icon-close {
 .card .title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+}
+
+/*==== TESTIMONIALS ===============*/
+#testimonials {
+  background: white;
+}
+
+#testimonials .container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#testimonials header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
+
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
+}
+
+#testimonials blockquote p span {
+  font: 700 2.5rem serif;
+
+  position: absolute;
+  top: -0.375rem;
+  left: -1.875rem;
+  color: var(--base-color);
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  /* font-style: italic; deixar o cite itálico */
+}
+
+#testimonials cite img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}
+
+/*==== SWIPER ===============*/
+
+/* .swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-active {
+  background: var(--base-color);
+}
+ */
+
+/*==== Contact ===============*/
+#contact .grid {
+  gap: 4rem;
+}
+
+#contact .text p {
+  margin-bottom: 2rem;
+}
+
+#contact .button i,
+#contact ul li i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+#contact ul.grid {
+  gap: 2rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+}
+
+#contact ul li i {
+  color: var(--base-color);
 }
